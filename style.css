@@ -1,0 +1,199 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+
+body {
+    background-color: #E9E9E9;
+}
+
+.container {
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .First-Image {
+        width: 70%;
+        height: 84vh; /*Height - margin*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.container-login {
+    background-color: white;
+    padding: 64px 88px 64px 88px;
+    height: 95vh;
+    width: 40%;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+}
+
+    .title {
+        color: #1D1D1D;
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 48px;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .subtitle {
+        color: #606060;
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+.form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    input {
+        width: 100%;
+        border: 0;
+        border-bottom: 1.8px solid#181818;
+        outline: 0;
+    }
+
+   /* .input input:focus, .input input:valid {
+        border-bottom: 1.8px solid blue;
+    }*/
+    
+    #email {
+        margin-bottom: 32px;
+    }
+ 
+        .password-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: 0;
+        width: 100%;
+    }
+    
+    .password-label button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        min-width: 24.01px;
+        min-height: 15px;
+    }
+
+    .options-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 24px;
+    }
+    
+    .remember-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .remember-container input {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px; 
+        accent-color: #6729FF;
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    .remember-container label {
+        font-size: 14px;
+        color: #272727;
+        cursor: pointer;
+    }
+    
+    .forgot-password {
+        font-size: 14px;
+        color: #676767;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+    .button1 {
+        border-radius: 32px;
+        font-size: 16px;
+        font-weight: medium;
+        padding: 16px 16px;
+        cursor: pointer;
+        min-width: 376px;
+        min-height: 51px;
+        color: white;
+        border: none;
+        background-color: #1D1D1D;
+    }
+
+    .button2 {
+        border-radius: 32px;
+        font-size: 16px;
+        font-weight: medium;
+        padding: 16px 16px;
+        gap: 16px;
+        cursor: pointer;
+        min-width: 376px;
+        min-height: 51px;
+        border: none;
+        text-decoration: none;
+        color: #1D1D1D;
+        background-color: #F3F3F3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup p {
+        margin-top: 8px;
+        color: #1D1D1D;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .signup a {
+        color: #1D1D1D;
+        font-weight: 500;
+        text-decoration: none;
+    }
