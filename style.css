@@ -10,25 +10,24 @@ body {
 }
 
 .container {
-    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 100vh;
+}
+
+.First-Image {
+    flex: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-    .First-Image {
-        width: 70%;
-        height: 84vh; /*Height - margin*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 .container-login {
     background-color: white;
-    padding: 64px 88px 64px 88px;
-    height: 95vh;
-    width: 40%;
+    padding: 64px 88px;
+    flex: 0.3;
     border-radius: 24px;
     display: flex;
     justify-content: center;
@@ -41,157 +40,142 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;    
 }
 
-    .title {
-        color: #1D1D1D;
-        margin-top: 40px;
-        font-weight: 600;
-        font-size: 48px;
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
+.title {
+    color: #1D1D1D;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 48px;
+}
 
-    .subtitle {
-        color: #606060;
-        margin-top: 8px;
-        font-size: 16px;
-        font-weight: 400;
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center
-    }
+.subtitle {
+    color: #606060;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
 
-.form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 40px;
-    }
+.container-form {
+    display: grid;
+    margin-top: 40px;
+}
     
-    input {
-        width: 100%;
-        border: 0;
-        border-bottom: 1.8px solid#181818;
-        outline: 0;
-    }
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    flex: 1;
+    border: 0;
+    border-bottom: 1.8px solid#181818;
+    outline: 0;
+    gap: 32px;
+}
     
-    #email {
-        margin-bottom: 32px;
-    }
+#email {
+    margin-bottom: 32px;
+}
  
-        .password-label {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        outline: 0;
-        width: 100%;
-    }
-    
-    .password-label button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin-left: auto;
-        min-width: 24.01px;
-        min-height: 15px;
-    }
+.password-span {
+    display: flex;
+}
 
-    .options-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-top: 24px;
-    }
-    
-    .remember-container {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    
-    .remember-container input {
-        width: 16px;
-        height: 16px;
-        border-radius: 4px; 
-        accent-color: #6729FF;
-        cursor: pointer; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-        
-    .remember-container label {
-        font-size: 14px;
-        color: #272727;
-        cursor: pointer;
-    }
-    
-    .forgot-password {
-        font-size: 14px;
-        color: #676767;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.eye-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    min-width: 24px;
+    min-height: 15px;
+    position: relative;
+    padding-left: 70%;
+}
 
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-top: 24px;
+}
+   
+.remember-container {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: #272727;
+}
     
-    .button1 {
-        margin-top: 40px;
-        border-radius: 32px;
-        font-size: 16px;
-        font-weight: medium;
-        padding: 16px 16px;
-        cursor: pointer;
-        min-width: 376px;
-        min-height: 51px;
-        color: white;
-        border: none;
-        background-color: #1D1D1D;
-    }
+.remember-container input {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px; 
+    accent-color: #6729FF;
+    cursor: pointer; 
+}
+    
+.forgot-password {
+    font-size: 14px;
+    color: #676767;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.button {
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 16px;
+    cursor: pointer;
+    min-width: 376px;
+    min-height: 51px;
+    border: none;
+}
 
-    .button2 {
-        margin-top: 24px;
-        border-radius: 32px;
-        font-size: 16px;
-        font-weight: medium;
-        padding: 16px 16px;
-        gap: 16px;
-        cursor: pointer;
-        min-width: 376px;
-        min-height: 51px;
-        border: none;
-        text-decoration: none;
-        color: #1D1D1D;
-        background-color: #F3F3F3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.button1 {
+    margin-top: 40px;
+    color: white;
+    background-color: #1D1D1D;
+}
+
+.button2 {
+    margin-top: 24px;
+    text-decoration: none;
+    color: #1D1D1D;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
 
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 24px;
     margin-top: 40px;
+    color: #1D1D1D;
 }
 
-    .footer p {
-        color: #1D1D1D;
-        font-size: 14px;
-        font-weight: normal;
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: #1D1D1D;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width:1032px){
+    .First-Image {
+        display: none;
     }
 
-    .footer a {
-        color: #1D1D1D;
-        font-weight: 500;
-        text-decoration: none;
+    .container-login {
+        flex: 1;
     }
+}
